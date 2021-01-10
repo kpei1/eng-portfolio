@@ -13,17 +13,18 @@
     height: 50px;
 }
 
-a:link, a:visited, a:active {
+a.header-a:link, a.header-a:visited, a.header-a:active {
     text-decoration: none;
     color: burlywood;
 }
 
-a:hover {
+a.header-a:hover {
     color:white;
 }
 
-a: {
+a {
     outline: none;
+    text-decoration: none;
 }
 
 div.abody {
@@ -50,6 +51,7 @@ h2 {
 ul {
     list-style-position: inside;
     padding-bottom: 20px;
+    margin-left: 20px;
 }
 
 a.proj-list {
@@ -128,4 +130,8 @@ img.img-set {
     height: 300px;
     width: auto;
     margin: 20px 10px 0px;
+}
+
+ul.about-ul {
+    padding-bottom: 0px;
 }
