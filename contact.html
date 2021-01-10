@@ -14,8 +14,15 @@
         </div>
         <div id="home-body" class="abody">
             <h1>Contact</h1>
-            <h2>Welcome to my engineering portfolio!</h2>
-            <p>I am a mechanical engineering and computer science major at Johns Hopkins University expected to graduate in 2023.</p>
+            <form action="contact.php" method="post">
+                <div id="form-content">
+                <input class="my-form" type="text" name="myName" placeholder="Name" required>
+                <input class="my-form" type="email" name="myEmail" placeholder="Email" required>
+                <textarea class="my-form" name="myMessage" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+                </div>
+            </form>
+            <p>Or you can send me a message on <a href="https://www.linkedin.com/in/katharinepriu/">LinkedIn</a>.</p>
         </div>
     </body>
 </html>
