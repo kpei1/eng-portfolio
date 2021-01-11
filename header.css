@@ -25,6 +25,7 @@ a.header-a:hover {
 a {
     outline: none;
     text-decoration: none;
+    color: darkred;
 }
 
 div.abody {
@@ -45,7 +46,7 @@ h1 {
 }
 
 h2 {
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 ul {
@@ -170,4 +171,29 @@ button {
     color: burlywood;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+#bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-content {
+    max-width: 800px;
+}
+
+#profile-pic {
+    height: 200px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.needs-space-below {
+    margin-bottom: 20px;
+}
+
+#pepper {
+    height: 500px;
+    width: auto;
 }
