@@ -209,3 +209,23 @@ button {
     height: 500px;
     width: auto;
 }
+
+.caption {
+    font-style: italic;
+    text-align: center;
+}
+
+div.img-w-p {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+}
+
+p.p-img-width {
+    margin-right: 20px;
+}
+
+#floutists-friend {
+    height: 175px;
+    width: auto;
+}
