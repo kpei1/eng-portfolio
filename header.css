@@ -233,3 +233,13 @@ p.p-img-width {
 .space-after {
     padding-bottom: 15px;
 }
+
+#space-above {
+    padding-top: 20px;
+}
+
+#proj5-img img {
+    height: 300px;
+    width: auto;
+    margin: 20px 10px 0px;
+}
