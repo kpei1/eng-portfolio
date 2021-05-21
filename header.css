@@ -229,3 +229,7 @@ p.p-img-width {
     height: 175px;
     width: auto;
 }
+
+.space-after {
+    padding-bottom: 15px;
+}
