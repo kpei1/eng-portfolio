@@ -14,10 +14,12 @@
         </div>
         <div class="abody">
             <h1>Electronics & Instrumentation Design Project</h1>
-            <video width="500" height="350" controls>
-                <source src="https://www.youtube.com/watch?v=DSID2qOr8os" type="video/mp4">
-            </video>
-            <p class="caption">Testing of both the project simulation and physical circuit</p>
+            <div class="img-w-cap">
+                <iframe width="500" height="350" src="https://www.youtube.com/embed/DSID2qOr8os"></iframe>
+                <p class="caption">Testing of both the project simulation and physical circuit</p>
+            </div>
+            <p class="space-after">Objective: Design and create a circuit that will alert the user if a given temperature threshold has been exceeded. An LED must turn on once the temperature threshold has been crossed, and in order to save energy, the LED must have a "check status" button so that it is not on constantly. The LED should stay on, even if the temperature drops back below the threshold, until the user presses the reset button.</p>
+            <p class="space-after">Design: We used a potentiometer to allow the user to adjust the threshold temperature of the device. Our TMP36 temperature sensor was connected to an op-amp. The temperature sensor and the op-amp were configured so that the op-amp would output 5V while the temperature was below the threshold, and 0V while the temperature was above the threshold. The output from our op-amp went to a 555 Timer chip, which remembered whether the threshold had been exceeded. The LED was connected to the output of the 555 Timer, and the reset button was connected to the 555 Timer's reset leg.</p>
             <p>View the full report <a href="proj11/E&I%20Project%20Report.pdf">here</a>.</p>
         </div>
     </body>
