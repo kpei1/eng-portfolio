@@ -122,6 +122,14 @@ div.img-w-cap {
     margin-bottom: 30px;
 }
 
+div.header-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 #bb8-pics {
     height: 300px;
     width: auto;
