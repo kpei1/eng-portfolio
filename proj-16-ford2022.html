@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="header.css">
+    </head>
+    <body>
+        <div id="header">
+            <a href='index.html' class="header-a">Home</a>
+            <a href='about.html' class="header-a">About</a>
+            <a href='previous-courses.html' class="header-a">Courses</a>
+            <a href='skills.html' class="header-a">Skills</a>
+            <a href='projects.html' class="header-a">Projects</a>
+            <a href='contact.html' class="header-a">Contact</a>
+        </div>
+        <div class="abody">
+            <h1>Ford Product Development Intern</h1>
+            <div class="header-photo">
+                <img id="bb8-pics" src="proj16/me_and_headlight.jpg"/>
+            </div>
+            <div class="subbody">
+                <h3 class="sub-head">Overview</h3>
+                <p class="space-after">Over the 2022 summer, I spent 12 weeks working as a product development intern in Ford's Exterior Lighting Core Engineering department. My main task was to analyze multiple aiming systems and provide feedback on problems that could lead to the creation of new design rules. I also created an exterior lighting training site through Degreed and worked on benchmarking with both the Core and Strategy teams.</p>
+                <h3 class="sub-head">Aiming System Analysis</h3>
+                <p class="space-after">I began by analyzing a headlamp from the 2022 Lincoln Navigator. Because my internship was virtual, my supervisor mailed me a headlight, which I was able to take apart. The team had been having issues when aiming the headlamp from high to low; shortly after aiming, the aim would drop significantly more than is allowed by the IIHS.</p>
+                <p class="space-after">Potential causes of aim drop:</p>
+                <ul>
+                    <li>Gear lash</li>
+                    <li>Friction</li>
+                    <li>Improper tolerancing</li>
+                    <li>Warpage due to heat</li>
+                </ul>
+                <p class="space-after">I met with engineers at Ford, engineers at Ford's suppliers, and my supervisor to determine these potential causes of aim drop. I then began to look into each issue to assess its impact on the system. Based on the heat tests conducted, I quickly determined that warpage due to heat was the least likely. I then contacted the motor supplier to discuss the extent of possible gear lash in the motor. Through that conversation, I learned that as long as we did not exceed the weight limit for the motor, the gear lash should be negligible. I was concurrently reviewing information sent to me by Ford's engineers containing their tolerancing information. The tolerances were inconsistent across similar components, and many were relatively large. I determined that these tolerances, when combined, could lead to a generous amount of friction in the system, as components would no longer align correctly. Because there was a chain of 9 different components to make the system work, the compounded error caused more problems than with a simpler system.</p>
+                <p class="space-after">To test my hypothesis that friction and tolerancing were the main contributors to the aim drop, I performed simulations in Ansys using different coefficients of friction to simulate more/less friction at each joint. I found that when the friction was increased only a small amount, the force on the motor increased significantly, exceeding the rated limit.</p>
+                <p class="space-after">After determining the cause of aim drop for the Navigator, I also ran Ansys simulations on the 2023 Mustang and Aviator. While the Aviator was made by the same team as the Navigator and had a similar system, the Mustang's headlamp was made by a different supplier and had a much simpler system with fewer components. I found the effects of friction on this system to be much less, while the Aviator was still suffering.</p>
+            </div>
+            <div class="img-w-cap">
+                <img id="bb8-pics" src="proj16/mustang_aiming.png"/>
+                <p class="caption">An aiming system in Ansys</p>
+            </div>
+            <div class="subbody">
+                <h3>Creating New Design Rules</h3>
+                <p class="space-after">Based on my analysis and lessons learned, I was tasked to brainstorm new design rules to prevent future aiming issues. At the conclusion of my internship, these design rules were in the process of being created and implemented:</p>
+                <ul>
+                    <li>Headlamps must pass Ford's requirements in virtual Ansys simulations before creating a physical prototype.</li>
+                    <li>Aiming systems must not be over-engineered; the system does not need to be "fancy" and using many components if it can be done in a much simpler way.</li>
+                </ul>
+            </div>
+            <div class="subbody">
+                <h3>Benchmarking</h3>
+                <p class="space-after">For the core engineering team, I traveled to different dealerships around Raleigh and measured and photographed our competitors' fiduciary marks. I then compared their shapes and sizes to those used by Ford. Through this, I learned that most American-made cars used fiduciary marks to aim their headlamps, while European cars lacked fiduciary marks and therefore had an alternative aiming system.</p>
+                <p class="space-after">For the strategy team, I researched our competitors online to compare the types of lamps they used in their headlights. I created a spreadsheet where I listed different brands, their vehicles, and what type of headlight each vehicle had (HID, LED, pixel, matrix, etc.). I discovered that most of the high-end cars are gravitating towards the matrix and pixel systems, while cheaper cars used simpler LEDs or even HID lights.</p>
+            </div>
+            <div class="subbody">
+                <h3>Degreed Training Plan</h3>
+                <p class="space-after">When I arrived at Ford, the exterior lighting onboarding training plan was outdated and unorganized, so my supervisor assigned me to create a new training plan online using the Degreed platform. I worked with another engineer to create 3 different training "pathways", one for general lighting basics, one for exterior lighting basics, and the final one for advanced exterior lighting topics. Within each pathway we placed different online courses that contained essential knowledge for a lighting engineer. We combined the 3 pathways into a Core Lighting "Plan". This plan and the pathways inside can be easily accessed through Ford's Degreed site. This helped to streamline the learning process, as all the information is now contained in-order in one specific place.</p>
+            </div>
+            <div class="subbody">
+                <h3>Intern City of Tomorrow Challenge</h3>
+                <p class="space-after">As part of the internship program, Ford created a challenge for us interns to complete. We formed groups of up to 5 members, and we were tasked to solve a problem that fit into one of 4 categories. We chose "future mobility" and created the Workspace of the Future, which is a convertible office space inside a Ford SUV. The conversion process took 4 steps:</p>
+                <ol>
+                    <li>Front seats slide forward to meet dash</li>
+                    <li>Middle row rotates 180 degrees to face the back</li>
+                    <li>Middle row slides forward to meet front seats</li>
+                    <li>Desk is deployed and rested between the 2nd and 3rd rows of seats</li>
+                </ol>
+                <p class="space-after">A more detailed overview of the Workspace can be found <a href="proj16/Workspace%20of%20the%20Future%20Challenge%20Edition.pptx"><b>here</b></a>. Below is an animation of the Workspace conversion process I created using Blender.</p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/poiVxaG7swI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="center_plz" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
