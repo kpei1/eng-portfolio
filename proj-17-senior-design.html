@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="header.css">
+    </head>
+    <body>
+        <div id="header">
+            <a href='index.html' class="header-a">Home</a>
+            <a href='about.html' class="header-a">About</a>
+            <a href='previous-courses.html' class="header-a">Courses</a>
+            <a href='skills.html' class="header-a">Skills</a>
+            <a href='projects.html' class="header-a">Projects</a>
+            <a href='contact.html' class="header-a">Contact</a>
+        </div>
+        <div class="abody">
+            <h1>Plier Jaw Grip and Measurement Wear Rig</h1>
+            <h2>Stanley Black & Decker</h2>
+            <div class="subbody">
+                <h3>Project Goal</h3>
+                <p class="space-after">SBD-P23, under guidance of Stanley Black and Decker (SBD), had the goal of designing a test rig that provides a universal, comparable way to measure the durability and life of plier teeth. The rig is built for testing of tongue and groove pliers. The results will help inform the most monetarily efficient way for SBD to manufacture their pliers, focusing on the effect secondary heat treatment has on plier jaws. Our goal was to provide recommendations for the continuation or discontinuation of heat treatment on SBD's pliers. As a secondary goal, we were also tasked to assess straight-jaw vs v-jaw pliers and provide recommendations on shape and lifespan.</p>
+            </div>
+            <div class="subbody">
+                <h3>Requirements</h3>
+                <p class="space-after">The requirements for our testing rig were as follows:</p>
+                <ul>
+                    <li>Accurate torque measurement data</li>
+                    <li>Consistent wear on plier teeth</li>
+                    <li>Universal for different plier sizes</li>
+                    <li>Fits varying test piece diameters</li>
+                    <li>Safe for the user</li>
+                    <li>Functions in applicable environments</li>
+                    <li>Simple test setup and use</li>
+                </ul>
+            </div>
+            <div class="img-w-cap">
+                <img id="bb8-pics" src="proj17/testing_rig.jpg"/>
+                <p class="caption">Figure 1. Our testing rig and electronics setup.</p>
+            </div>
+            <div class="subbody">
+                <h3>Our Solution</h3>
+                <p class="space-after">We designed a testing rig (Figure 1) that uses a rotating test piece to cause wear on plier teeth over time. The test piece is held using a chuck, which is attached to a motor using custom-machined parts. The motor is attached to a torque cell, which is attached to the 80/20 frame of the rig. A pair of pliers are placed with their jaws around the test piece, and a vice around the handles of the pliers is tightened to cause the plier teeth to grip the test piece. To measure the wear on the plier teeth, we measured the torque that the teeth exerted on the motor throughout the test with the jaws of the vice kept at a constant position. We used the torque cell to measure this torque and transmit the data through an Arduino and into Excel, where we processed the data.</p>
+            </div>
+            <div class="img-w-cap">
+                <img id="bb8-pics" src="proj17/Rig_Labeled.png"/>
+                <p class="caption">Figure 2. Our testing rig, labeled.</p>
+            </div>
+            <div class="subbody">
+                <h3>Wear Measurement Process</h3>
+                <p class="space-after">Because we needed the wear data to be consistent and repeatable across pliers of different types and sizes, we needed to standardize our method of collecting torque measurements. To do this, we chose a starting and ending torque value for the test. A starting value of 7 N-m was chosen based on a user survey that assessed the standard torque applied when using pliers. We chose our ending torque to be 50% of the starting torque, at which point we deemed the pliers to be worn out and no longer usable.</p>
+                <p class="space-after">When each test was initiated, we tightened the vice until the plier jaws gripped the test piece with enough force to exert the desired start torque. At that point, the Arduino began recording the torque data, and data was recorded until the torque dropped below the end torque value. We repeated these tests on both heat treated and non-heat treated pliers, as well as straight-jaw and v-jaw pliers.</p>
+                <p class="space-after">For our test pieces, we used both steel pipe and grinder bits. While the steel pipe more accurately mimicked real life scenarios, we found that the plier teeth caused wear on the test piece that contributed to the decrease in torque and therefore made our tests inaccurate, as we were inadvertently measuring the wear on the test piece as well as the wear on the teeth. Therefore, we switched to using diamond grinder bits, which did not show wear throughout the duration of the test. However, due to time constraints, we were unable to collect enough data with the diamond grinder bits to provide conclusive results and ultimately made our recommendations based on our data collected using hardened steel pipe. The use of diamond grinder bits or other harder test material is something that we have recommended to SBD for future testing.</p>
+            </div>
+            <div class="img-w-cap">
+                <img id="bb8-pics" src="proj17/Facom_Pipe_data.png"/>
+                <p class="caption">Figure 3. Data collected using Facom pliers, both heat treated and non-heat treated.</p>
+            </div>
+            <div class="img-w-cap">
+                <img id="bb8-pics" src="proj17/Channellock_Pipe_data.png"/>
+                <p class="caption">Figure 4. Data collected using Channellock pliers to compare V-jaw and straight-jaw pliers.</p>
+            </div>
+            <div class="subbody">
+                <h3>Results</h3>
+                <p class="space-after">Based on our user interviews and testing, we recommended that SBD discontinue the secondary heat treatment of their pliers. We found that the users of SBD pliers are infrequent plier users and therefore would not use the pliers past the lifespan that we calculated during our tests. Discontinuing heat treatment could safe SBD time and money in their manufacturing process.</p>
+                <p class="space-after">We also recommended that they use v-jaw pliers as opposed to straight-jaw pliers. The v-jaw pliers consistently lasted longer than the straight-jaw pliers, as they had more teeth in contact with the test piece. In the case  of the straight-jaw pliers, there was often only 1 or 2 teeth in contact with the test piece, and when those teeth failed, the pliers lost their grip entirely. Therefore, we found v-jaw pliers to have the preferable jaw shape.</p>
+                <p class="space-after">More images and details are attached in our <a href="proj17/SBD-P23%20Design%20Day%20Poster%20426.pdf"><b>poster</b></a> and <a href="proj17/SBD-P23%20Final%20Presentation.pptx"><b>presentation</b></a>.</p>
+            </div>
+        </div>
+    </body>
+</html>
